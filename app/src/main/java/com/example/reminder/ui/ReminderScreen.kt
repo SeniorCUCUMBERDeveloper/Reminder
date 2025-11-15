@@ -26,7 +26,6 @@ fun ReminderScreen(viewModel: ReminderViewModel = viewModel()) {
     var onlyCharging by remember { mutableStateOf(false) }
     var onlyFullBattery by remember { mutableStateOf(false) }
 
-    // валидность интервала (строго >= 15)
     val isIntervalValid = interval.toIntOrNull()?.let { it >= 15 } == true
 
     val workInfos =
